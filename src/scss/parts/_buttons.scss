@@ -1,0 +1,47 @@
+// --------------------------------------------------
+// 
+// Header
+// 
+// --------------------------------------------------
+// Menu button
+.header__menu-btn {
+    display: inline-block;
+    width: 30px;
+    height: 23px;
+    position: relative;
+    span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        background-color: $base-color;
+        left: 0;
+        transition: all .3s ease-in-out;
+        &:first-child {
+            top: 0;
+            transform-origin: 0 0;
+        }
+        &:nth-child(2) {
+            top: calc(50% - 2px);
+        }
+        &:last-child {
+            top: calc(100% - 4px);
+            transform-origin: 0 100%;
+        }
+    }
+    &.active {
+        span {
+            &:first-child {
+                transform: rotate(45deg);
+                width: 29px;
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                transform: rotate(-45deg);
+                width: 29px;
+            }
+        }
+    }
+}

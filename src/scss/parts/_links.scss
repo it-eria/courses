@@ -1,0 +1,39 @@
+// --------------------------------------------------
+// 
+// Links
+// 
+// --------------------------------------------------
+a {
+    color: currentColor;
+    &:hover {
+        color: currentColor;
+        text-decoration: none;
+    }
+    &:focus {
+        color: currentColor;
+        text-decoration: none;
+    }
+    &:active {
+        color: currentColor;
+        text-decoration: none;
+    }
+    &:visited {
+        color: currentColor;
+        text-decoration: none;
+    }
+}
+
+// --------------------------------------------------
+// 
+// Logo
+// 
+// --------------------------------------------------
+.logo {
+    display: inline-block;
+    font-family: $raleway-medium;
+    font-size: $logo-fz;
+    line-height: $logo-fz;
+    text-decoration: none;
+    border: 2px solid currentColor;
+    padding: $logo-paddings; 
+}
