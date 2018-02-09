@@ -1,0 +1,24 @@
+// --------------------------------------------------
+// 
+// Section title
+// 
+// --------------------------------------------------
+.section-title {
+    margin-bottom: 50px;
+    h2 {
+        font-family: $raleway-bold;
+        font-size: 40px;
+    }
+    h4 {
+        font-family: $raleway-light;
+        font-size: 25px;
+    }
+}
+
+.other-courses, .contact-us, .lectors {
+    h3 {
+        font-family: $raleway-bold;
+        font-size: 30px;
+        margin-bottom: 45px;
+    }
+}

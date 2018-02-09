@@ -20,6 +20,62 @@
         height: 100%;
         z-index: -1;
         background-repeat: no-repeat;
+        background-size: cover;
         transform: scale(1.1);
+        transition: filter .3s ease-in-out;
+    }
+    .better-place {
+        font-family: $raleway-bold;
+        font-size: 30px;
+        transition: all .3s ease-in-out;
+    }
+    .page-title {
+        h1 {
+            font-family: $raleway-black;
+            font-size: 45px;
+            & + p {
+                margin-top: 30px;
+            }
+        }
+        p {
+            font-family: $raleway-bold;
+            font-size: 25px;
+            max-width: 50%;
+        }
+    }
+    .bottom-btn-area {
+        width: 120px;
+        height: 80px;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        margin-left: -60px;
+        .bottom-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 20px;
+            span {
+                display: block;
+                width: 25px;
+                height: 2px;
+                background-color: #000;
+                position: absolute;
+                &:first-child {
+                    left: 0;
+                    top: 0;
+                    transform-origin: 0 0;
+                    transform: rotate(35deg);
+                }
+                &:last-child {
+                    right: 0;
+                    top: 0;
+                    transform-origin: 100% 0;
+                    transform: rotate(-35deg);
+                }
+            }
+        }
     }
 }

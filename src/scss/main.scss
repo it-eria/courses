@@ -6,6 +6,9 @@
 @import "parts/custom";
 @import "vendors/bootstrap/bootstrap.scss";
 
+@import "vendors/slick/slick";
+@import "vendors/nice-select/nice-select";
+
 // --------------------------------------------------
 // 
 // Parts
@@ -14,9 +17,13 @@
 @import "parts/fonts";
 @import "parts/variables";
 @import "parts/general";
+@import "parts/titles";
+@import "parts/texts";
 @import "parts/links";
 @import "parts/buttons";
 @import "parts/header";
 @import "parts/nav";
+@import "parts/sections";
+@import "parts/blocks";
 @import "parts/footer";
 @import "parts/adaptive";

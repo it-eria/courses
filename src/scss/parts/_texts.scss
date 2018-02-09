@@ -1,0 +1,61 @@
+// --------------------------------------------------
+// 
+// Mentor paragraphs
+// 
+// --------------------------------------------------
+.mentor {
+    p {
+        font-family: $raleway-light;
+        font-size: 22px;
+    }
+}
+
+// --------------------------------------------------
+// 
+// Block of simple text
+// 
+// --------------------------------------------------
+.b-simple-text {
+    margin-top: 50px;
+    h5 {
+        font-family: $raleway-bold;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-family: $raleway-light;
+        font-size: 17px;
+    }
+}
+
+// --------------------------------------------------
+// 
+// Carousel text
+// 
+// --------------------------------------------------
+.carousel__slide {
+    .text-side {
+        h3 {
+            font-family: $raleway-bold;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        p {
+            font-family: $raleway-light;
+            font-size: 23px;
+        }
+    }
+}
+
+// --------------------------------------------------
+// 
+// Photo with caption
+// 
+// --------------------------------------------------
+.photo-with-caption {
+    p {
+        font-family: $raleway-bold;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+}

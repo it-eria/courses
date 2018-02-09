@@ -1,0 +1,123 @@
+// --------------------------------------------------
+// 
+// Mentor
+// 
+// --------------------------------------------------
+.mentor {
+    &__right-side {
+        p {
+            padding-right: 100px;
+        }
+    }
+}
+
+// --------------------------------------------------
+// 
+// Slider
+// 
+// --------------------------------------------------
+.slider {
+    .photo-side {
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+    .text-side {
+        p {
+            padding-right: 25%;
+            & + .button {
+                margin-top: 45px;
+            }
+        }
+        .button {
+            margin: 15px 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .b-or {
+        width: 285px;
+        text-align: center;
+        font-family: $raleway-light;
+        font-size: 15px;
+    }
+}
+
+// --------------------------------------------------
+// 
+// Photo with caption
+// 
+// --------------------------------------------------
+.photo-with-caption {
+    img {
+        padding-right: 40%;
+    }
+    p {
+        padding-right: 70px;
+    }
+}
+
+// --------------------------------------------------
+// 
+// Contact us
+// 
+// --------------------------------------------------
+.contact-us {
+    form {
+        input, select, textarea, .nice-select {
+            display: block;
+            width: 100%;
+            border: 2px solid #000000;
+            margin: 30px 0;
+            padding: 0 20px;
+            height: 51px;
+            font-family: $raleway-bold;
+            font-size: 15px;
+            background-color: #ffffff;
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: #000000;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                color: #000000;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                color: #000000;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+                color: #000000;
+            }
+        }
+        textarea {
+            height: 132px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            resize: none;
+        }
+        .nice-select {
+            border: none;
+            display: inline-block;
+            width: auto;
+            margin: 0;
+            padding-right: 20px;
+            .current {
+                line-height: 51px;
+            }
+            &:after {
+                width: 12px;
+                height: 12px;
+                right: 0;
+                top: 50%;
+                border: 2px solid #000000;
+                border-top: none;
+                border-left: none;
+                transform: translateY(-75%) rotate(45deg);
+            }
+        }
+        input[type="submit"] {
+            cursor: pointer;
+            max-width: 280px;
+        }
+    }
+}

@@ -1,24 +1,495 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
-
+    .header {
+        padding-top: 30px;
+        min-height: 540px;
+        .better-place {
+            text-align: center;
+            font-size: 16px;
+        }
+        &__courses-links {
+            display: block;
+            float: none;
+            text-align: center;
+        }
+        .main-nav-area {
+            height: 350px;
+        }
+        &__bg {
+            background-position: -240px 0;
+        }
+        .main-nav {
+            ul {
+                width: 100%;
+                margin-left: 0;
+                li {
+                    max-width: 100%;
+                    margin-top: 15px;
+                    text-align: center;
+                }
+                .big-item {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .big-link {
+            width: 100px;
+            height: 100px;
+            margin: 0;
+            span {
+                font-size: 18px;
+            }
+            &:first-child {
+                margin-right: 30px;
+            }
+        }
+        .small-link {
+            width: 80px;
+            height: 80px;
+            margin-top: -17px;
+            clear: both;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    section {
+        padding: 50px 0;
+    }
+    .section-title {
+        margin-bottom: 20px;
+        h2 {
+            font-size: 30px;
+        }
+        h4 {
+            font-size: 16px;
+        }
+    }
+    .mentor {
+        p {
+            font-size: 16px;
+        }
+        img {
+            margin: 15px 0;
+        }
+        &__right-side {
+            p {
+                padding-right: 0;
+            }
+        }
+    }
+    .b-simple-text {
+        h5 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+    .slider {
+        .carousel {
+            .arrow {
+                display: none !important;
+            }
+        }
+        .carousel__slide {
+            .photo-side {
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 15px;
+                }
+            }
+            .text-side {
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 16px;
+                    padding-right: 0;
+                    & + .button {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .button {
+                padding: 7px 0;
+                font-size: 16px;
+            }
+        }
+    }
+    .photo-with-caption {
+        p {
+            margin-bottom: 15px;
+        }
+        img {
+            padding-right: 0;
+        }
+    }
+    .other-courses, .contact-us, .lectors {
+        h3 {
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+        .course-teaser {
+            margin: 15px 0;
+            &--btn-only {
+                padding: 0;
+                height: auto;
+            }
+        }
+    }
+    .b-lector {
+        img {
+            margin-bottom: 15px;
+        }
+    }
+    .footer {
+        margin-top: 40px;
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
-
+    .header {
+        padding-top: 30px;
+        min-height: 750px;
+        &__bg {
+            background-position: -240px 0;
+        }
+        .better-place {
+            text-align: center;
+            margin-top: 30px;
+        }
+        &__courses-links {
+            display: block;
+            float: none;
+            text-align: center;
+            margin-top: 90px;
+        }
+        .main-nav-area {
+            height: 510px;
+        }
+        .main-nav {
+            ul {
+                li {
+                    margin-top: 30px;
+                }
+            }
+        }
+        .big-link {
+            width: 210px;
+            height: 210px;
+            margin: 0;
+            &:first-child {
+                margin-right: 70px;
+            }
+        }
+        .small-link {
+            width: 170px;
+            height: 170px;
+            margin-top: -30px;
+            clear: both;
+        }
+    }
+    section {
+        padding: 50px 0;
+    }
+    .section-title {
+        margin-bottom: 20px;
+        h2 {
+            font-size: 30px;
+        }
+        h4 {
+            font-size: 16px;
+        }
+    }
+    .mentor {
+        p {
+            font-size: 16px;
+        }
+        img {
+            margin: 15px 0;
+        }
+        &__right-side {
+            p {
+                padding-right: 0;
+            }
+        }
+    }
+    .b-simple-text {
+        h5 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+    .slider {
+        .carousel {
+            .arrow {
+                display: none !important;
+            }
+        }
+        .carousel__slide {
+            .photo-side {
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 15px;
+                }
+            }
+            .text-side {
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 16px;
+                    padding-right: 0;
+                    & + .button {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .button {
+                padding: 7px 0;
+                font-size: 16px;
+            }
+        }
+    }
+    .photo-with-caption {
+        p {
+            margin-bottom: 15px;
+        }
+        img {
+            padding-right: 0;
+        }
+    }
+    .other-courses, .contact-us, .lectors {
+        h3 {
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+        .course-teaser {
+            margin: 15px 0;
+            &--btn-only {
+                padding: 0;
+                height: auto;
+            }
+        }
+    }
+    .b-lector {
+        img {
+            margin-bottom: 15px;
+        }
+    }
+    .footer {
+        margin-top: 40px;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
-
+    .header {
+        min-height: 850px;
+        &__courses-links {
+            display: block;
+            float: none;
+            text-align: center;
+        }
+        &__bg {
+            background-position: -280px 0;
+        }
+        .better-place {
+            font-size: 20px;
+        }
+        .main-nav-area {
+            height: 500px;
+        }
+        .big-link {
+            width: 140px;
+            height: 140px;
+            margin: 0;
+            span {
+                font-size: 20px;
+            }
+            font-size: 20px;
+            &:first-child {
+                margin-right: 40px;
+            }
+        }
+        .small-link {
+            width: 110px;
+            height: 110px;
+            margin-top: -17px;
+            clear: both;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    section {
+        padding: 50px 0;
+    }
+    .mentor {
+        p {
+            font-size: 16px;
+        }
+        img {
+            margin: 15px 0;
+        }
+        &__right-side {
+            p {
+                padding-right: 0;
+            }
+        }
+    }
+    .b-simple-text {
+        h5 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+    .slider {
+        .carousel__slide {
+            .photo-side {
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 15px;
+                }
+            }
+            .text-side {
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 16px;
+                    padding-right: 0;
+                    & + .button {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .button {
+                padding: 7px 0;
+                font-size: 16px;
+            }
+        }
+    }
+    .photo-with-caption {
+        p {
+            margin-bottom: 15px;
+        }
+        img {
+            padding-right: 0;
+        }
+    }
+    .other-courses, .contact-us, .lectors {
+        h3 {
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+        .course-teaser {
+            margin: 15px 0;
+            &--btn-only {
+                padding: 0;
+                height: auto;
+            }
+        }
+    }
+    .b-lector {
+        img {
+            margin-bottom: 15px;
+        }
+    }
+    .footer {
+        margin-top: 40px;
+    }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
+    .header {
+        .big-link {
+            width: 170px;
+            height: 170px;
+            &:first-child {
+                margin-right: 60px;
+            }
+        }
+        .small-link {
+            width: 140px;
+            height: 140px;
+        }
+    }
+    .mentor {
+        p {
+            font-size: 16px;
+        }
+        img {
+            margin: 15px 0;
+        }
+        &__right-side {
+            p {
+                padding-right: 0;
+            }
+        }
+    }
+    .b-simple-text {
+        h5 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+    .slider {
+        .carousel__slide {
+            .photo-side {
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 15px;
+                }
+            }
+            .text-side {
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 16px;
+                    padding-right: 0;
+                    & + .button {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .button {
+                padding: 7px 0;
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .header {
+        .big-link {
+            width: 210px;
+            height: 210px;
+        }
+        .small-link {
+            width: 160px;
+            height: 160px;
+        }
+    }
+}
+
+// Container
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1700px;
+    }
 }

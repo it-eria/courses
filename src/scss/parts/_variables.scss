@@ -7,7 +7,13 @@
 $coresans-light: "CoreSansA35Light", sans-serif;
 
 // Raleway
+$raleway-light: "RalewayLight", sans-serif;
+$raleway-regular: "RalewayRegular", sans-serif;
 $raleway-medium: "RalewayMedium", sans-serif;
+$raleway-bold: "RalewayBold", sans-serif;
+$raleway-semibold: "RalewaySemibold", sans-serif;
+$raleway-extrabold: "RalewayExtraBold", sans-serif;
+$raleway-black: "RalewayBlack", sans-serif;
 
 // --------------------------------------------------
 // 
@@ -28,6 +34,10 @@ $header-padding-top: 60px;
 $header-padding-bottom: 0;
 $header-padding-left: 0;
 $header-padding-right: 0;
+// Navigation items
+$nav-item-margin: 40px auto 0 auto;
+// Sections
+$section-padding: 100px 0;
 
 // --------------------------------------------------
 // 
@@ -36,6 +46,10 @@ $header-padding-right: 0;
 // --------------------------------------------------
 // logo
 $logo-fz: 20px;
+// Big navigation item
+$big-nav-item-fz: 30px;
+// Small navigation item
+$small-nav-item-fz: 15px;
 
 // --------------------------------------------------
 // 
@@ -44,3 +58,13 @@ $logo-fz: 20px;
 // --------------------------------------------------
 // Header
 $header-height: 100vh;
+// Navigation item
+$nav-item-max-width: 150px;
+
+// --------------------------------------------------
+// 
+// Blur
+// 
+// --------------------------------------------------
+// Header elements
+$header-blur-level: 10px;

@@ -9,6 +9,7 @@
     width: 30px;
     height: 23px;
     position: relative;
+    z-index: 9999;
     span {
         display: block;
         width: 100%;
@@ -41,6 +42,139 @@
             &:last-child {
                 transform: rotate(-45deg);
                 width: 29px;
+            }
+        }
+    }
+    &--with-text {
+        p {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: 45px;
+            white-space: nowrap;
+            font-family: $raleway-bold;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        span {
+            width: 5px;
+        }
+        &.active {
+            span {
+                &:first-child {
+                    transform: none;
+                    width: 5px;
+                }
+                &:nth-child(2) {
+                    opacity: 1;
+                }
+                &:last-child {
+                    transform: none;
+                    width: 5px;
+                } 
+            }
+        }
+    }
+}
+
+// --------------------------------------------------
+// 
+// Rest buttons
+// 
+// --------------------------------------------------
+.button {
+    display: inline-block;
+    text-align: center;
+    &--blue {
+        width: 285px;
+        padding: 15px 0;
+        color: #ffffff !important;
+        font-family: $raleway-bold;
+        font-size: 20px;
+        background-color: #b5d6e9;
+    }
+    &--gradient {
+        width: 285px;
+        padding: 15px 0;
+        color: #000000 !important;
+        font-family: $raleway-bold;
+        font-size: 20px;
+        background-image: linear-gradient(-145deg, rgba(206,219,237,.25), rgba(240,232,209,.25) 55%);
+    }
+    &--detail {
+        border: 1px solid #000000;
+        font-family: $raleway-medium;
+        font-size: 14px;
+        padding: 7px 0;
+    }
+    &--more-courses {
+        font-family: $raleway-semibold;
+        position: relative;
+        &:hover {
+            &:after {
+                right: 10px;
+            }
+        }
+        &:after {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            border: 2px solid #000000;
+            border-left: none;
+            border-bottom: none;
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            transform: rotate(45deg);
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+.carousel {
+    .arrow {
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 40px;
+        top: 50%;
+        z-index: 9999;
+        &--prev {
+            left: 0;
+            transform: translate(0, -50%) rotate(180deg);
+            span {
+                opacity: .3;
+            }
+            &:hover {
+                span {
+                    opacity: 1;
+                }
+            }
+        }
+        &--next {
+            right: 0;
+            transform: translate(0, -50%);
+        }
+        span {
+            position: absolute;
+            display: block;
+            height: 25px;
+            width: 2px;
+            background-color: #000000;
+            transition: all .3s ease-in-out;
+            &:first-child {
+                top: 0;
+                left: 0;
+                transform-origin: 50% 0;
+                transform: rotate(-35deg);
+            }
+            &:last-child {
+                left: 0;
+                bottom: 0;
+                transform-origin: 50% 100%;
+                transform: rotate(35deg);
             }
         }
     }

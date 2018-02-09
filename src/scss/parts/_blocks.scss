@@ -1,0 +1,63 @@
+// --------------------------------------------------
+// 
+// Teasers
+// 
+// --------------------------------------------------
+.course-teaser {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    &--color-1 {
+        background-color: #ebf5fa;
+    }
+    &--color-2 {
+        background-image: linear-gradient(-145deg, rgba(206,219,237,.25), rgba(240,232,209,.25) 55%);
+    }
+    &--color-3 {
+        background-color: #f7f7f5;
+    }
+    &--btn-only {
+        justify-content: center;
+    }
+    h3 {
+        font-family: $raleway-bold;
+        font-size: 20px;
+    }
+    p {
+        font-family: $raleway-regular;
+        font-size: 15px;
+    }
+    .button {
+        max-width: 125px;
+    }
+}
+
+.b-lector {
+    max-width: 300px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        max-width: 200px;
+        margin-bottom: 50px;
+    }
+    h4 {
+        font-family: $raleway-bold;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    p {
+        font-family: $raleway-light;
+        font-size: 15px;
+    }
+    a {
+        display: inline-block;
+        font-family: $raleway-light;
+        font-size: 15px;
+        text-decoration: underline;
+        margin-top: 15px;
+    }
+}
