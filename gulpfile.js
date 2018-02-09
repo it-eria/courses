@@ -141,8 +141,8 @@ gulp.task('watch', function() {
 
 // Build Task
 gulp.task('build', gulp.series(
-    'clear-style',
     'clear-html',
+    'clear-style',
     'clear-js',
     gulp.parallel('style:sass','html','js','images')
 ));

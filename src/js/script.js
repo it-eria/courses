@@ -8,6 +8,7 @@ var lFollowX = 0,
     y = 0,
     friction = 1 / 30;
 
+
 function moveBackground() {
   x += (lFollowX - x) * friction;
   y += (lFollowY - y) * friction;  
@@ -31,12 +32,12 @@ $(function() {
   if($(window).width() > 768) {
     moveBackground();
   }
-
     // Buttons
     $('.header__menu-btn').on('click', function(e) {
         e.preventDefault();
         $(this).toggleClass('active');
         $('.main-nav, .b-main-nav-bg').fadeToggle();
+        $('.main-nav').toggleClass('opened');
         $('.header *[data-js="blur"]').toggleClass('blur');
         if($(this).hasClass('active')) {
           $('.header').css('min-height', $('.main-nav').height()+150);

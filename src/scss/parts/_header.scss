@@ -45,11 +45,18 @@
     }
     .bottom-btn-area {
         width: 120px;
-        height: 80px;
+        height: 40px;
         position: absolute;
         bottom: 15px;
         left: 50%;
         margin-left: -60px;
+        &:hover {
+            .bottom-btn {
+                animation-name: btnDownAnim;
+                animation-duration: 1.2s;
+                animation-iteration-count: 1,
+            }
+        }
         .bottom-btn {
             position: absolute;
             top: 50%;
@@ -77,5 +84,24 @@
                 }
             }
         }
+    }
+}
+
+
+@keyframes btnDownAnim {
+    0% {
+        top: 50%;
+    }
+    25% {
+        top: 0;
+    }
+    50% {
+        top: 100%
+    }
+    75% {
+        top: 0
+    }
+    100% {
+        top: 50%
     }
 }

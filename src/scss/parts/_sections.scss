@@ -121,3 +121,149 @@
         }
     }
 }
+
+// --------------------------------------------------
+// 
+// Details
+// 
+// --------------------------------------------------
+.details {
+    .b-texture {
+        max-width: 40%;
+        height: 100%;
+        max-height: 575px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    .lectors {
+        margin-bottom: 45px;
+        .b-lector {
+            max-width: 330px;
+        }
+    }
+    .b-about {
+        margin-bottom: 60px;
+        &--non-important {
+            font-family: $raleway-light;
+            font-size: 20px;
+            padding-right: 30%;
+        }
+        &--important {
+            font-family: $raleway-bold;
+            font-size: 20px;
+            padding-right: 20%;
+        }
+    }
+    .b-more-details {
+        font-family: $raleway-bold;
+        font-size: 25px;
+        line-height: 25px;
+        padding: 40px 0 10px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        span {
+            font-size: 50px;
+            &.or {
+                font-family: $raleway-light;
+                font-size: 15px;
+                display: block;
+                margin: 15px 0;
+            }
+        }
+        margin-bottom: 45px;
+        &--begin {
+            border: none;
+        }
+    }
+    .b-exclusive {
+        h3 {
+            font-family: $raleway-bold;
+            font-size: 30px;
+            margin-bottom: 45px;
+        }
+        h4 {
+            font-family: $raleway-bold;
+            font-size: 25px;
+            margin-bottom: 45px;
+        }
+        ul {
+            list-style: none;
+            margin: 0 0 45px 0;
+            padding: 0;
+            li {
+                font-family: $raleway-light;
+                font-size: 20px;
+                &:before {
+                    content: '—';
+                    display: inline-block;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .b-btn {
+        margin-top: 45px;
+    }
+}
+
+// --------------------------------------------------
+// 
+// Blockquote
+// 
+// --------------------------------------------------
+.blockquote {
+    h6 {
+        font-family: $raleway-regular;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    h2 {
+        font-family: $raleway-bold;
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .b-texture {
+        width: calc(50% - 50px);
+        height: 100px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        
+    }
+}
+
+// --------------------------------------------------
+// 
+// About text
+// 
+// --------------------------------------------------
+.about-text {
+    padding-left: 30%;
+    background-image: url(../images/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+    .feather {
+        left: 20%;
+        top: 50%;
+        transform: translate(0, -50%);
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+    }
+    h2 {
+        font-family: $raleway-bold;
+        font-size: 40px;
+        margin-bottom: 90px;
+    }
+    p {
+        font-family: $raleway-light;
+        font-size: 20px;
+        margin-bottom: 40px;
+        b {
+            font-size: 25px;
+        }
+    }
+}

@@ -93,6 +93,34 @@
         font-family: $raleway-bold;
         font-size: 20px;
         background-color: #b5d6e9;
+        position: relative;
+        overflow: hidden;
+        span {
+            position: relative;
+            z-index: 200;
+        }
+        &:before {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            left: -60px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #98d2ef;
+            opacity: .95;
+            filter: blur(5px);
+            z-index: 100;
+        }
+        &:hover {
+            &:before {
+                animation-name: btnAnim;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+            }
+        }
     }
     &--gradient {
         width: 285px;
@@ -100,7 +128,35 @@
         color: #000000 !important;
         font-family: $raleway-bold;
         font-size: 20px;
+        position: relative;
+        overflow: hidden;
         background-image: linear-gradient(-145deg, rgba(206,219,237,.25), rgba(240,232,209,.25) 55%);
+        span {
+            position: relative;
+            z-index: 200;
+        }
+        &:before {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            left: -60px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgb(206,219,237);
+            opacity: .2;
+            filter: blur(5px);
+            z-index: 100;
+        }
+        &:hover {
+            &:before {
+                animation-name: btnAnim;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+            }
+        }
     }
     &--detail {
         border: 1px solid #000000;
@@ -130,6 +186,18 @@
             transform: rotate(45deg);
             transition: all .3s ease-in-out;
         }
+    }
+    &--begin {
+        width: 250px;
+        padding: 9px 0;
+        border: 2px solid #000000;
+        color: #000000 !important;
+        font-family: $raleway-bold;
+        font-size: 20px;
+        background-image: url(../images/button-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
     }
 }
 
@@ -177,5 +245,14 @@
                 transform: rotate(35deg);
             }
         }
+    }
+}
+
+@keyframes btnAnim {
+    from {
+        left: -60px;
+    }
+    to {
+        left: calc(100% + 60px);
     }
 }
