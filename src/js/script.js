@@ -29,6 +29,9 @@ $(window).on('mousemove click', function(e) {
 });
 
 $(function() {
+
+  var playedOnce = true;
+
   if($(window).width() > 768) {
     moveBackground();
   }
@@ -58,6 +61,17 @@ $(function() {
       $('html, body').animate({
         scrollTop: 0
       }, 2000);
+    });
+
+    $(window).on('scroll', function() {
+      if($('body').find('.video').length > 0) {
+        var videoObj = document.getElementById('video');
+        var offsetTop = $('.video').offset().top - $('.video').height() / 2;
+        if($(this).scrollTop() >= offsetTop && playedOnce) {
+          videoObj.play();
+          playedOnce = false;
+        }
+      }
     });
 
     // Sliders

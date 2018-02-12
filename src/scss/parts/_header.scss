@@ -21,12 +21,15 @@
         z-index: -1;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: 0 100%;
         transform: scale(1.1);
         transition: filter .3s ease-in-out;
     }
     .better-place {
         font-family: $raleway-bold;
         font-size: 30px;
+        margin-top: -47px;
+        letter-spacing: 1.5px;
         transition: all .3s ease-in-out;
     }
     .page-title {

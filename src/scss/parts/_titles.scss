@@ -4,14 +4,17 @@
 // 
 // --------------------------------------------------
 .section-title {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
     h2 {
         font-family: $raleway-bold;
-        font-size: 40px;
+        font-size: 38px;
+        letter-spacing: 3px;
     }
     h4 {
         font-family: $raleway-light;
-        font-size: 25px;
+        font-size: 26px;
+        letter-spacing: 1.5px;
+        margin-top: 15px;
     }
 }
 

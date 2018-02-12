@@ -16,11 +16,12 @@
 // 
 // --------------------------------------------------
 .b-simple-text {
-    margin-top: 50px;
+    margin-top: 97px;
     h5 {
         font-family: $raleway-bold;
         font-size: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+        letter-spacing: 1.5px;
     }
     p {
         font-family: $raleway-light;
@@ -56,6 +57,7 @@
     p {
         font-family: $raleway-bold;
         font-size: 15px;
-        margin-bottom: 30px;
+        margin-bottom: 16px;
+        letter-spacing: 1.5px;
     }
 }

@@ -4,9 +4,14 @@
 // 
 // --------------------------------------------------
 .mentor {
+    &__left-side {
+        p {
+            padding-right: 90px;
+        }
+    }
     &__right-side {
         p {
-            padding-right: 100px;
+            padding-left: 90px;
         }
     }
 }
@@ -17,6 +22,7 @@
 // 
 // --------------------------------------------------
 .slider {
+    padding-top: 195px;
     .photo-side {
         img {
             height: 100%;
@@ -51,11 +57,13 @@
 // 
 // --------------------------------------------------
 .photo-with-caption {
+    padding-top: 190px;
     img {
-        padding-right: 40%;
+        padding-left: 7%;
+        padding-right: 27%;
     }
     p {
-        padding-right: 70px;
+        padding-right: 7px;
     }
 }
 
@@ -121,6 +129,28 @@
         }
     }
 }
+
+// --------------------------------------------------
+// 
+// Video
+// 
+// --------------------------------------------------
+.video {
+    position: relative;
+    height: 815px;
+    margin: 100px 0;
+    padding: 0;
+    overflow: hidden;
+    #video {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 
 // --------------------------------------------------
 // 

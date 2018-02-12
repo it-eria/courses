@@ -48,6 +48,8 @@ a {
 .header__courses-links {
     float: right;
     transition: all .3s ease-in-out;
+    position: relative;
+    left: 50px;
     a {
         position: relative;
         display: inline-block;
