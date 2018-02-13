@@ -22,10 +22,10 @@ let path = {
         'html': 'src/*.html'
     },
     build: {
-        'css': 'build/css/',
-        'js': 'build/js/',
-        'images': 'build/images/',
-        'fonts': 'build/fonts/',
+        'css': 'build/assets/css/',
+        'js': 'build/assets/js/',
+        'images': 'build/assets/images/',
+        'fonts': 'build/assets/fonts/',
         'html': 'build/'
     },
     watch: {
@@ -52,15 +52,15 @@ var serverConfig = {
 
 // Clear Build Dest
 gulp.task('clear-style', function() {
-    return del(['build/css/*.css']);
+    return del(['build/assets/css/*.css']);
 });
 
 gulp.task('clear-html', function() {
-    return del(['build/*.html']);
+    return del(['build/assets/*.html']);
 });
 
 gulp.task('clear-js', function() {
-    return del(['build/js/*.js']);
+    return del(['build/assets/js/*.js']);
 });
 
 // SASS

@@ -30,6 +30,12 @@ $(window).on('mousemove click', function(e) {
 
 $(function() {
 
+  $('.preloader').delay(2100).fadeOut(300);
+  setTimeout(function() {
+    $('body').removeAttr('style');
+  }, 2100);
+
+
   var playedOnce = true;
 
   if($(window).width() > 768) {
