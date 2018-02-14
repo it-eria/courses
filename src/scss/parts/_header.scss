@@ -12,6 +12,10 @@
     min-height: $header-height;
     position: relative;
     overflow: hidden;
+    &--booking {
+        min-height: auto;
+        padding-bottom: $header-padding-top;
+    } 
     &__bg {
         position: absolute;
         top: 0;

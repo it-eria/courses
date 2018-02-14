@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booking</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body style="overflow: hidden;">
+    <div class="preloader">
+        <img src="assets/images/preloader.gif" alt="loading....">
+    </div>
+    <!-- Header -->
+    <header class="header header--booking">
+        <div class="header__bg" data-js="blur" style="background-image: url(assets/images/header-bg.jpg);"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-6 col-md-4 offset-md-4 text-center">
+                    <a href="#" class="logo text-center">
+                        Language Boutique
+                    </a>
+                </div>
+                <!-- /Logo -->
+                <!-- Menu button -->
+                <div class="col-6 col-md-4 text-right">
+                    <a href="#" class="header__menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <!-- /Menu button -->
+            </div>
+        </div>
+        <div class="container position-relative">
+            <!-- Main navigation -->
+            <div class="row">
+                <div class="main-nav-area position-absolute">
+                    <nav class="main-nav">
+                        <div class="col-12">
+                            <ul>
+                                <li class="big-item"><a href="#">Курси</a></li>
+                                <li class="big-item"><a href="#">Про нас</a></li>
+                                <li class="big-item"><a href="#">Контакти</a></li>
+                                <li class="small-item"><a href="#">Фотоальбом</a></li>
+                                <li class="small-item"><a href="#">Відгуки учнів</a></li>
+                                <li class="small-item"><a href="#">Пройдіть тест на рівень знання мови</a></li>
+                                <li class=""><a href="#"><img src="assets/images/fb.png" alt="facebook"></a></li>
+                                <li class=""><a href="#"><img src="assets/images/inst.png" alt="instagram"></a></li>
+                            </ul>            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- /Main navigation -->
+        </div>
+    </header>
+    <!-- /Header -->
+    <!-- Main -->
+    <main class="content">
+        <!-- Calendar -->
+        <section class="calendar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Calendar -->
+        <!-- Contact us -->
+        <section class="contact-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-8">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>Напишіть нам:</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <input type="text" placeholder="Як вас звуть?">
+                                    <input type="text" placeholder="Ваша e-mail адреса:">
+                                    <input type="text" placeholder="Ваша e-mail адреса:">
+                                    <input type="text" id="dateValue">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <textarea placeholder="Доповнення"></textarea>
+                                    <select>
+                                        <option value="0">Виберіть вікову категорію</option>
+                                        <option value="0">Category 1</option>
+                                        <option value="0">Category 2</option>
+                                        <option value="0">Category 3</option>
+                                        <option value="0">Category 4</option>
+                                    </select>
+                                    <input type="submit" value="Надіслати">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>Замовити дзвінок:</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="text" placeholder="Як вас звуть?">
+                                    <input type="text" placeholder="Ваш мобільний">
+                                    <input type="text" placeholder="Доповнення">
+                                    <input type="submit" value="Надіслати">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Contact us -->
+    </main>
+    <!-- /Main -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>©2017 Language Boutique</p>
+                    <a href="#" class="btn-up"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <script src="assets/js/script.min.js"></script>
+</body>
+</html>
