@@ -144,6 +144,12 @@ $(function() {
     $('body').removeAttr('style');
   }, 2100);
 
+  setTimeout(function() {
+    var videoHeader = document.getElementById('video_header');
+    videoHeader.play();
+  }, 2100);
+
+  $('*[data-js="while-video-play"]').delay(5500).fadeIn(300);
 
   var playedOnce = true;
 
