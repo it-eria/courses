@@ -156,6 +156,15 @@ $(function() {
   if($(window).width() > 768) {
     moveBackground();
   }
+
+  $('.bottom-btn-area').on('mouseover', function() {
+    $(this).addClass('mouseover');
+  });
+  $('.bottom-btn-area').on('mouseleave', function() {
+    setTimeout(function() {
+      $('.bottom-btn-area').removeClass('mouseover');
+    }, 1200);
+  });
     // Buttons
     $('.header__menu-btn').on('click', function(e) {
         e.preventDefault();

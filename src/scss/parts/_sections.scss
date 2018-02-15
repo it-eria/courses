@@ -3,18 +3,18 @@
 // Mentor
 // 
 // --------------------------------------------------
-.mentor {
-    &__left-side {
-        p {
-            padding-right: 90px;
-        }
-    }
-    &__right-side {
-        p {
-            padding-left: 90px;
-        }
-    }
-}
+// .mentor {
+//     &__left-side {
+//         p {
+//             padding-right: 90px;
+//         }
+//     }
+//     &__right-side {
+//         p {
+//             padding-left: 90px;
+//         }
+//     }
+// }
 
 // --------------------------------------------------
 // 
@@ -25,6 +25,7 @@
     padding-top: 195px;
     .photo-side {
         img {
+            display: inline-block;
             height: 100%;
             width: auto;
         }

@@ -168,9 +168,23 @@
     &--more-courses {
         font-family: $raleway-semibold;
         position: relative;
+        text-align: left;
+        max-width: 85px !important;
+        width: auto;
+        &:before {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #000;
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            transition: all .3s ease-in-out;
+        }
         &:hover {
-            &:after {
-                right: 10px;
+            &:before {
+                width: 100%;
             }
         }
         &:after {
@@ -183,7 +197,7 @@
             border-bottom: none;
             position: absolute;
             top: 5px;
-            right: 15px;
+            right: 0;
             transform: rotate(45deg);
             transition: all .3s ease-in-out;
         }
@@ -213,9 +227,9 @@
         &--prev {
             left: 0;
             transform: translate(0, -50%) rotate(180deg);
-            span {
-                opacity: .3;
-            }
+            // span {
+            //     opacity: .3;
+            // }
             &:hover {
                 span {
                     opacity: 1;
