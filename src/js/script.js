@@ -2,6 +2,7 @@
 //= vendors/slick.js
 //= vendors/jquery.nice-select.js
 //= vendors/jquery.datetimepicker.min.js
+//= vendors/parallax.min.js
 
 var lFollowX = 0,
     lFollowY = 0,
@@ -114,6 +115,11 @@ $(function() {
 
   var dateSelected;
 
+  if($('#parallax-scene').length > 0) {
+    var scene = $('#parallax-scene').get(0);
+    var parallaxInstance = new Parallax(scene);
+  }
+
   if($('#calendar').length > 0) {
     $('#calendar').datetimepicker({
       baseCls: "perfect-datetimepicker", 
@@ -142,7 +148,7 @@ $(function() {
   $('.preloader').delay(2100).fadeOut(300);
   setTimeout(function() {
     $('body').removeAttr('style');
-  }, 2100);
+  }, 5500);
 
   setTimeout(function() {
     var videoHeader = document.getElementById('video_header');

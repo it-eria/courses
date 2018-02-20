@@ -4,12 +4,14 @@
 // 
 // --------------------------------------------------
 .course-teaser {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 30px;
+    margin-top: 15px;
     &--color-1 {
         background-color: #ebf5fa;
     }
@@ -47,6 +49,11 @@
     h4 {
         font-family: $raleway-bold;
         font-size: 20px;
+        margin-bottom: 5px;
+    }
+    h5 {
+        font-family: $raleway-bold;
+        font-size: 16px;
         margin-bottom: 15px;
     }
     p {
