@@ -104,14 +104,22 @@
             padding-bottom: 14px;
             resize: none;
         }
+        label {
+            display: block;
+            font-family: $raleway-bold;
+            font-size: 15px;
+            margin: 29px 0 0;
+        }
         .nice-select {
             border: none;
             display: inline-block;
             width: auto;
-            margin: 15px 0;
+            margin: 0;
+            height: 30px;
             padding-right: 20px;
+            padding-left: 0;
             .current {
-                line-height: 51px;
+                line-height: 30px;
             }
             &:after {
                 width: 12px;
