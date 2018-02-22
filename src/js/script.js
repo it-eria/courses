@@ -115,6 +115,16 @@ $(function() {
 
   var dateSelected;
 
+  $('[data-js="open-popup"').on('click', function(e) {
+    e.preventDefault();
+    var target = $(this).attr('data-target');
+    $('#'+target).addClass('opened');
+  });
+
+  $('.popup--bg').on('click', function(e) {
+    $('.popup').removeClass('opened');
+  });
+
   if($('#parallax-scene').length > 0) {
     var scene = $('#parallax-scene').get(0);
     var parallaxInstance = new Parallax(scene);

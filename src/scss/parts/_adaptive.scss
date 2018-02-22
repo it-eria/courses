@@ -277,6 +277,21 @@
             opacity: 0;
         }
     }
+    .popup {
+        max-height: unset;
+        height: auto;
+        &--content {
+            position: relative;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            transform: translate(0,0);
+            .text {
+                max-height: 300px;
+                overflow: auto;
+            }
+        }
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -495,6 +510,21 @@
             opacity: 0;
         }
     }
+    .popup {
+        max-height: unset;
+        height: auto;
+        &--content {
+            position: relative;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            transform: translate(0,0);
+            .text {
+                max-height: 300px;
+                overflow: auto;
+            }
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -602,9 +632,13 @@
         }
         .course-teaser {
             margin: 15px 0;
+            padding: 20px;
+            height: 210px;
+            h4 {
+                font-size: 18px;
+            }
             &--btn-only {
                 padding: 0;
-                height: auto;
             }
         }
     }
