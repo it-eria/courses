@@ -115,7 +115,7 @@ $(function() {
 
   var dateSelected;
 
-  $('[data-js="open-popup"').on('click', function(e) {
+  $('.open-popup').on('click', function(e) {
     e.preventDefault();
     var target = $(this).attr('data-target');
     $('#'+target).addClass('opened');
@@ -188,7 +188,7 @@ $(function() {
         $('.main-nav, .b-main-nav-bg').fadeToggle();
         $('.main-nav').toggleClass('opened');
         $('.header *[data-js="blur"]').toggleClass('blur');
-        if($(this).hasClass('active')) {
+        if($(this).hasClass('active') && !$('.header').hasClass('header--booking')) {
           $('.header').css('min-height', '100vh');
         } else {
           $('.header').removeAttr('style');
