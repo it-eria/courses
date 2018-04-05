@@ -1,154 +1,232 @@
 // --------------------------------------------------
-// 
+//
 // Teasers
-// 
+//
 // --------------------------------------------------
 .course-teaser {
-    width: 100%;
-    max-width: 250px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px;
-    margin-top: 15px;
-    &--color-1 {
-        background-color: #ebf5fa;
-    }
-    &--color-2 {
-        background-image: linear-gradient(-145deg, rgba(206,219,237,.25), rgba(240,232,209,.25) 55%);
-    }
-    &--color-3 {
-        background-color: #f7f7f5;
-    }
-    &--btn-only {
-        justify-content: center;
-    }
-    h3 {
-        font-family: $raleway-bold;
-        font-size: 20px;
-    }
-    p {
-        font-family: $raleway-regular;
-        font-size: 15px;
-    }
-    .button {
-        max-width: 125px;
-    }
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  margin-top: 15px;
+  &--color-1 {
+    background-color: #ebf5fa;
+  }
+  &--color-2 {
+    background-image: linear-gradient(
+      -145deg,
+      rgba(206, 219, 237, 0.25),
+      rgba(240, 232, 209, 0.25) 55%
+    );
+  }
+  &--color-3 {
+    background-color: #f7f7f5;
+  }
+  &--btn-only {
+    justify-content: center;
+  }
+  h3 {
+    font-family: $raleway-bold;
+    font-size: 20px;
+  }
+  p {
+    font-family: $raleway-regular;
+    font-size: 15px;
+  }
+  .button {
+    max-width: 125px;
+  }
 }
 
 .b-lector {
-    max-width: 290px;
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    img {
-        max-width: 200px;
-        margin-bottom: 50px;
-    }
-    h4 {
-        font-family: $raleway-bold;
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
-    h5 {
-        font-family: $raleway-bold;
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
-    p {
-        font-family: $raleway-light;
-        font-size: 15px;
-    }
-    a {
-        display: inline-block;
-        font-family: $raleway-light;
-        font-size: 15px;
-        text-decoration: underline;
-        margin-top: 15px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+  max-width: 290px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    max-width: 200px;
+    margin-bottom: 50px;
+  }
+  h4 {
+    font-family: $raleway-bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  h5 {
+    font-family: $raleway-bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-family: $raleway-light;
+    font-size: 15px;
+  }
+  a {
+    display: inline-block;
+    font-family: $raleway-light;
+    font-size: 15px;
+    text-decoration: underline;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 #calendar {
-    display: inline-block;
+  display: inline-block;
 }
 
 #dateValue {
-    display: none;
+  display: none;
 }
 
 *[data-js="while-video-play"] {
-    display: none;
+  display: none;
 }
 
 // --------------------------------------------------
-// 
+//
 // Popup
-// 
+//
 // --------------------------------------------------
 .popup {
-    position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  max-height: 100vh;
+  overflow: auto;
+  padding: 15px 0;
+  z-index: 9999;
+  display: block;
+  transition: all 0.15s ease-in-out;
+  &--bg {
+    position: absolute;
     top: 0;
     left: 0;
-    width: 0;
-    height: 0;
-    max-height: 100vh;
-    overflow: auto;
-    padding: 15px 0;
-    z-index: 9999;
-    display: block;
-    transition: all .15s ease-in-out;
-    &--bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    opacity: 0.8;
+    z-index: 9001;
+  }
+  &--content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9002;
+    width: 80%;
+    min-width: 290px;
+    max-width: 400px;
+    .text {
+      background-color: #fff;
+      padding: 5%;
+      h5 {
+        font-size: 22px;
+        font-family: $raleway-bold;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+      }
+      p {
+        font-size: 16px;
+        font-family: $raleway-medium;
+        margin-bottom: 1em;
+      }
+      .popup-btn {
+        display: block;
         width: 100%;
-        background-color: #222;
-        opacity: .8;
-        z-index: 9001;
+        padding: 5px 0 3px;
+        color: #fff !important;
+        text-transform: uppercase;
+        border-radius: 20px;
+        background-color: #000;
+        font-family: $raleway-extrabold;
+        text-align: center;
+        font-size: 14px;
+      }
     }
-    &--content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 9002;
-        width: 80%;
-        min-width: 290px;
-        max-width: 400px;
-        .text {
-            background-color: #fff;
-            padding: 5%;
-            h5 {
-                font-size: 22px;
-                font-family: $raleway-bold;
-                text-transform: uppercase;
-                margin-bottom: 1em;
-            }
-            p {
-                font-size: 16px;
-                font-family: $raleway-medium;
-                margin-bottom: 1em;
-            }
-            .popup-btn {
-                display: block;
-                width: 100%;
-                padding: 5px 0 3px;
-                color: #fff !important;
-                text-transform: uppercase;
-                border-radius: 20px;
-                background-color: #000;
-                font-family: $raleway-extrabold;
-                text-align: center;
-                font-size: 14px;
-            }
-        }
+  }
+  &.opened {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// --------------------------------------------------
+//
+// Review slider
+//
+// --------------------------------------------------
+.review-slider {
+  width: 100%;
+  position: relative;
+  &__slide {
+    img {
+      margin-bottom: 15px;
     }
-    &.opened {
-        width: 100%;
-        height: 100%;
+    h3 {
+      margin-bottom: 0;
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: center;
     }
+    .reviewer-social {
+      display: inline-block;
+      vertical-align: center;
+      width: 23px;
+      height: 23px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: contain;
+      &_fb {
+        background-image: url(../images/reviewer-fb.png);
+      }
+      &_insta {
+        background-image: url(../images/reviewer-insta.png);
+      }
+    }
+    .who {
+      p {
+        font-family: $raleway-regular;
+        font-size: 22px;
+        color: #7c7c7c;
+      }
+    }
+    .review {
+      margin-top: 30px;
+      font-family: $raleway-regular;
+      font-size: 24px;
+      p {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.review-arr {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg) translate(0, -50%);
+  z-index: 500;
+  cursor: pointer;
+  &__prev {
+    border-top: none;
+    border-right: none;
+    left: -15px;
+  }
+  &__next {
+    border-bottom: none;
+    border-left: none;
+    right: -15px;
+  }
 }

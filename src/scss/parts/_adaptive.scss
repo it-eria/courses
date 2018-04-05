@@ -1,757 +1,779 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    .header {
-        padding-top: 30px;
-        min-height: 540px;
-        height: 100vh;
-        .logo {
-            font-size: 16px;
-            line-height: 16px;
-        }
-        .better-place {
-            text-align: center;
-            font-size: 16px;
-            margin-top: 20px;
-        }
-        &__menu-btn {
-            left: 0;
-        }
-        &__courses-links {
-            display: block;
-            float: none;
-            text-align: center;
-            left: 0;
-        }
-        .main-nav-area {
-            height: 400px;
-        }
-        &__bg {
-            background-size: 150% auto;
-            background-position: 50% 95%;
-        }
-        .main-nav {
-            ul {
-                width: 100%;
-                margin-left: 0;
-                li {
-                    max-width: 100%;
-                    margin-top: 15px;
-                    text-align: center;
-                }
-                .big-item {
-                    a {
-                        font-size: 20px;
-                    }
-                }
-            }
-        }
-        .big-link {
-            width: 100px;
-            height: 100px;
-            margin: 0;
-            span {
-                font-size: 18px;
-            }
-            &:first-child {
-                margin-right: 30px;
-            }
-        }
-        .small-link {
-            width: 80px;
-            height: 80px;
-            margin-top: -17px;
-            clear: both;
-            span {
-                font-size: 14px;
-            }
-        }
-        .page-title {
-            h1 {
-                font-size: 25px;
-            }
-            p {
-                font-size: 20px;
-                max-width: 100%;
-            }
-        }
-        &__menu-btn--with-text {
-            p {
-                font-size: 16px;
-                white-space: pre-wrap;
-                line-height: 16px;
-            }
-        }
-        .container {
-            transform: none;
-        }
+  .header {
+    padding-top: 30px;
+    min-height: 540px;
+    height: 100vh;
+    .logo {
+      font-size: 16px;
+      line-height: 16px;
     }
-    section {
-        padding: 50px 0;
+    .better-place {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 20px;
     }
-    .section-title {
-        margin-bottom: 20px;
-        h2 {
-            font-size: 30px;
-        }
-        h4 {
-            font-size: 16px;
-        }
+    &__menu-btn {
+      left: 0;
     }
-    .mentor {
-        p {
-            font-size: 16px;
-        }
-        img {
-            margin: 15px 0;
-            max-width: 60%;
-        }
-        &__left-side {
-            p {
-                padding-right: 0;
-            }
-        }
-        &__right-side {
-            p {
-                padding-left: 0;
-            }
-        }
+    &__courses-links {
+      display: block;
+      float: none;
+      text-align: center;
+      left: 0;
     }
-    .b-simple-text {
-        h5 {
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
+    .main-nav-area {
+      height: 400px;
     }
-    .slider {
-        padding-top: 50px;
-        .carousel {
-            .arrow {
-                display: none !important;
-            }
-        }
-        .carousel__slide {
-            .photo-side {
-                img {
-                    width: 100%;
-                    height: auto;
-                    margin-bottom: 15px;
-                }
-            }
-            .text-side {
-                h3 {
-                    font-size: 20px;
-                    margin-bottom: 15px;
-                }
-                p {
-                    font-size: 16px;
-                    padding-right: 0;
-                    & + .button {
-                        margin-top: 15px;
-                    }
-                }
-            }
-            .b-or {
-                width: 100%;
-            }
-            .button {
-                padding: 7px 0;
-                font-size: 16px;
-                width: 100%;
-            }
-        }
+    &__bg {
+      background-size: 150% auto;
+      background-position: 50% 95%;
     }
-    .photo-with-caption {
-        padding-top: 50px;
-        p {
-            margin-bottom: 15px;
+    .main-nav {
+      ul {
+        width: 100%;
+        margin-left: 0;
+        li {
+          max-width: 100%;
+          margin-top: 15px;
+          text-align: center;
         }
-        img {
-            padding-right: 0;
+        .big-item {
+          a {
+            font-size: 20px;
+          }
         }
+      }
     }
-    .other-courses, .contact-us, .lectors {
-        h3 {
-            font-size: 25px;
-            margin-bottom: 25px;
-        }
-        .course-teaser {
-            margin: 15px 0;
-            &--btn-only {
-                padding: 0;
-                height: auto;
-            }
-        }
+    .big-link {
+      width: 100px;
+      height: 100px;
+      margin: 0;
+      span {
+        font-size: 18px;
+      }
+      &:first-child {
+        margin-right: 30px;
+      }
     }
-    .other-courses {
-        .course-teaser {
-            width: 100%;
-        }
+    .small-link {
+      width: 80px;
+      height: 80px;
+      margin-top: -17px;
+      clear: both;
+      span {
+        font-size: 14px;
+      }
     }
-    .b-lector {
-        img {
-            margin-bottom: 15px;
-        }
+    .page-title {
+      h1 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 20px;
+        max-width: 100%;
+      }
     }
-    .details {
-        .b-about {
-            margin-bottom: 30px;
-            &--non-important {
-                padding-right: 0;
-                font-size: 16px;
-            }
-            &--important {
-                padding-right: 0;
-                font-size: 16px;
-            }
-        }
-        .b-more-details {
-            font-size: 18px;
-            line-height: 18px;
-            span {
-                font-size: 35px;
-            }
-        }
-        .b-exclusive {
-            h3 {
-                font-size: 23px;
-                margin-bottom: 25px;
-            }
-            ul {
-                li {
-                    font-size: 16px;
-                    margin-bottom: 25px;
-                }
-            }
-            h4 {
-                font-size: 20px;
-                margin-bottom: 25px;
-            }
-        }
-        .b-btn {
-            .button {
-                width: 100%;
-            }
-        }
+    &__menu-btn--with-text {
+      p {
+        font-size: 16px;
+        white-space: pre-wrap;
+        line-height: 16px;
+      }
     }
-    .about-text {
+    .container {
+      transform: none;
+    }
+  }
+  section {
+    padding: 50px 0;
+  }
+  .section-title {
+    margin-bottom: 20px;
+    h2 {
+      font-size: 30px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+  }
+  .mentor {
+    p {
+      font-size: 16px;
+    }
+    img {
+      margin: 15px 0;
+      max-width: 60%;
+    }
+    &__left-side {
+      p {
+        padding-right: 0;
+      }
+    }
+    &__right-side {
+      p {
         padding-left: 0;
-        h2 {
-            font-size: 30px;
-            margin-bottom: 30px;
+      }
+    }
+  }
+  .b-simple-text {
+    h5 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+  .slider {
+    padding-top: 50px;
+    .carousel {
+      .arrow {
+        display: none !important;
+      }
+    }
+    .carousel__slide {
+      .photo-side {
+        img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 15px;
+        }
+      }
+      .text-side {
+        h3 {
+          font-size: 20px;
+          margin-bottom: 15px;
         }
         p {
-            font-size: 16px;
-            b {
-                font-size: 18px;
-            }
+          font-size: 16px;
+          padding-right: 0;
+          & + .button {
+            margin-top: 15px;
+          }
         }
+      }
+      .b-or {
+        width: 100%;
+      }
+      .button {
+        padding: 7px 0;
+        font-size: 16px;
+        width: 100%;
+      }
     }
-    .blockquote {
-        h2 {
-            font-size: 30px;
-        }
-        .b-texture {
-            width: calc(50% - 25px);
-            height: 50px;
-        }
+  }
+  .photo-with-caption {
+    padding-top: 50px;
+    p {
+      margin-bottom: 15px;
     }
-    .video {
-        margin: 0;
-        height: 200px;
+    img {
+      padding-right: 0;
     }
-    .footer {
-        margin-top: 40px;
+  }
+  .other-courses,
+  .contact-us,
+  .lectors {
+    h3 {
+      font-size: 25px;
+      margin-bottom: 25px;
     }
-    .preloader, #video_header {
-        display: none !important;
-    }
-    *[data-js="while-video-play"] {
-        display: block;
-    }
-    .video {
-        padding: 150px 0;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%;
-        video {
-            opacity: 0;
-        }
-    }
-    .popup {
-        max-height: unset;
+    .course-teaser {
+      margin: 15px 0;
+      &--btn-only {
+        padding: 0;
         height: auto;
-        &--content {
-            position: relative;
-            margin: 0 auto;
-            top: 0;
-            left: 0;
-            transform: translate(0,0);
-            .text {
-                max-height: 300px;
-                overflow: auto;
-            }
-        }
+      }
     }
+  }
+  .other-courses {
+    .course-teaser {
+      width: 100%;
+    }
+  }
+  .b-lector {
+    img {
+      margin-bottom: 15px;
+    }
+  }
+  .details {
+    .b-about {
+      margin-bottom: 30px;
+      &--non-important {
+        padding-right: 0;
+        font-size: 16px;
+      }
+      &--important {
+        padding-right: 0;
+        font-size: 16px;
+      }
+    }
+    .b-more-details {
+      font-size: 18px;
+      line-height: 18px;
+      span {
+        font-size: 35px;
+      }
+    }
+    .b-exclusive {
+      h3 {
+        font-size: 23px;
+        margin-bottom: 25px;
+      }
+      ul {
+        li {
+          font-size: 16px;
+          margin-bottom: 25px;
+        }
+      }
+      h4 {
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+    }
+    .b-btn {
+      .button {
+        width: 100%;
+      }
+    }
+  }
+  .about-text {
+    padding-left: 0;
+    h2 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 16px;
+      b {
+        font-size: 18px;
+      }
+    }
+  }
+  .blockquote {
+    h2 {
+      font-size: 30px;
+    }
+    .b-texture {
+      width: calc(50% - 25px);
+      height: 50px;
+    }
+  }
+  .video {
+    margin: 0;
+    height: 200px;
+  }
+  .footer {
+    margin-top: 40px;
+  }
+  .preloader,
+  #video_header {
+    display: none !important;
+  }
+  *[data-js="while-video-play"] {
+    display: block;
+  }
+  .video {
+    padding: 150px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    video {
+      opacity: 0;
+    }
+  }
+  .popup {
+    max-height: unset;
+    height: auto;
+    &--content {
+      position: relative;
+      margin: 0 auto;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+      .text {
+        max-height: 300px;
+        overflow: auto;
+      }
+    }
+  }
+  .review-slider {
+    &__slide {
+      .who {
+        p {
+          font-size: 14px;
+        }
+      }
+      .review {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .header {
-        padding-top: 30px;
-        min-height: 750px;
-        &__bg {
-            background-size: 150% auto;
-            background-position: 50% 95%;
-        }
-        .better-place {
-            text-align: center;
-            margin-top: 30px;
-        }
-        &__courses-links {
-            display: block;
-            float: none;
-            text-align: center;
-            margin-top: 90px;
-        }
-        .main-nav-area {
-            height: 510px;
-        }
-        .main-nav {
-            ul {
-                li {
-                    margin-top: 30px;
-                }
-            }
-        }
-        .big-link {
-            width: 210px;
-            height: 210px;
-            margin: 0;
-            &:first-child {
-                margin-right: 70px;
-            }
-        }
-        .small-link {
-            width: 170px;
-            height: 170px;
-            margin-top: -30px;
-            clear: both;
-        }
+  .header {
+    padding-top: 30px;
+    min-height: 750px;
+    &__bg {
+      background-size: 150% auto;
+      background-position: 50% 95%;
     }
-    section {
-        padding: 50px 0;
+    .better-place {
+      text-align: center;
+      margin-top: 30px;
     }
-    .section-title {
-        margin-bottom: 20px;
-        h2 {
-            font-size: 30px;
-        }
-        h4 {
-            font-size: 16px;
-        }
+    &__courses-links {
+      display: block;
+      float: none;
+      text-align: center;
+      margin-top: 90px;
     }
-    .mentor {
-        p {
-            font-size: 16px;
-        }
-        img {
-            margin: 15px 0;
-            max-width: 60%;
-        }
-        &__right-side {
-            p {
-                padding-right: 0;
-            }
-        }
+    .main-nav-area {
+      height: 510px;
     }
-    .b-simple-text {
-        h5 {
-            font-size: 18px;
-            margin-bottom: 15px;
+    .main-nav {
+      ul {
+        li {
+          margin-top: 30px;
         }
+      }
     }
-    .slider {
-        .carousel {
-            .arrow {
-                display: none !important;
-            }
-        }
-        .carousel__slide {
-            .photo-side {
-                img {
-                    width: 100%;
-                    height: auto;
-                    margin-bottom: 15px;
-                }
-            }
-            .text-side {
-                h3 {
-                    font-size: 20px;
-                    margin-bottom: 15px;
-                }
-                p {
-                    font-size: 16px;
-                    padding-right: 0;
-                    & + .button {
-                        margin-top: 15px;
-                    }
-                }
-            }
-            .button {
-                padding: 7px 0;
-                font-size: 16px;
-            }
-        }
+    .big-link {
+      width: 210px;
+      height: 210px;
+      margin: 0;
+      &:first-child {
+        margin-right: 70px;
+      }
     }
-    .photo-with-caption {
-        p {
-            margin-bottom: 15px;
-        }
-        img {
-            padding-right: 0;
-        }
+    .small-link {
+      width: 170px;
+      height: 170px;
+      margin-top: -30px;
+      clear: both;
     }
-    .other-courses, .contact-us, .lectors {
-        h3 {
-            font-size: 25px;
-            margin-bottom: 25px;
-        }
-        .course-teaser {
-            margin: 15px 0;
-            &--btn-only {
-                padding: 0;
-                height: auto;
-            }
-        }
+  }
+  section {
+    padding: 50px 0;
+  }
+  .section-title {
+    margin-bottom: 20px;
+    h2 {
+      font-size: 30px;
     }
-    .b-lector {
-        img {
-            margin-bottom: 15px;
-        }
+    h4 {
+      font-size: 16px;
     }
-    .details {
-        .b-about {
-            margin-bottom: 30px;
-            &--non-important {
-                padding-right: 0;
-                font-size: 16px;
-            }
-            &--important {
-                padding-right: 0;
-                font-size: 16px;
-            }
-        }
-        .b-more-details {
-            font-size: 18px;
-            line-height: 18px;
-            span {
-                font-size: 35px;
-            }
-        }
-        .b-exclusive {
-            h3 {
-                font-size: 23px;
-                margin-bottom: 25px;
-            }
-            ul {
-                li {
-                    font-size: 16px;
-                    margin-bottom: 25px;
-                }
-            }
-            h4 {
-                font-size: 20px;
-                margin-bottom: 25px;
-            }
-        }
-        .b-btn {
-            .button {
-                width: 100%;
-            }
-        }
+  }
+  .mentor {
+    p {
+      font-size: 16px;
     }
-    .about-text {
-        padding-left: 0;
-        h2 {
-            font-size: 30px;
-            margin-bottom: 30px;
-        }
-        p {
-            font-size: 16px;
-            b {
-                font-size: 18px;
-            }
-        }
+    img {
+      margin: 15px 0;
+      max-width: 60%;
     }
-    .blockquote {
-        h2 {
-            font-size: 30px;
-        }
-        .b-texture {
-            width: calc(50% - 25px);
-            height: 50px;
-        }
+    &__right-side {
+      p {
+        padding-right: 0;
+      }
     }
-    .footer {
-        margin-top: 40px;
+  }
+  .b-simple-text {
+    h5 {
+      font-size: 18px;
+      margin-bottom: 15px;
     }
-    .preloader, #video_header {
+  }
+  .slider {
+    .carousel {
+      .arrow {
         display: none !important;
+      }
     }
-    *[data-js="while-video-play"] {
-        display: block;
-    }
-    .video {
-        padding: 150px 0;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%;
-        video {
-            opacity: 0;
+    .carousel__slide {
+      .photo-side {
+        img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 15px;
         }
+      }
+      .text-side {
+        h3 {
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 16px;
+          padding-right: 0;
+          & + .button {
+            margin-top: 15px;
+          }
+        }
+      }
+      .button {
+        padding: 7px 0;
+        font-size: 16px;
+      }
     }
-    .popup {
-        max-height: unset;
+  }
+  .photo-with-caption {
+    p {
+      margin-bottom: 15px;
+    }
+    img {
+      padding-right: 0;
+    }
+  }
+  .other-courses,
+  .contact-us,
+  .lectors {
+    h3 {
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+    .course-teaser {
+      margin: 15px 0;
+      &--btn-only {
+        padding: 0;
         height: auto;
-        &--content {
-            position: relative;
-            margin: 0 auto;
-            top: 0;
-            left: 0;
-            transform: translate(0,0);
-            .text {
-                max-height: 300px;
-                overflow: auto;
-            }
-        }
+      }
     }
+  }
+  .b-lector {
+    img {
+      margin-bottom: 15px;
+    }
+  }
+  .details {
+    .b-about {
+      margin-bottom: 30px;
+      &--non-important {
+        padding-right: 0;
+        font-size: 16px;
+      }
+      &--important {
+        padding-right: 0;
+        font-size: 16px;
+      }
+    }
+    .b-more-details {
+      font-size: 18px;
+      line-height: 18px;
+      span {
+        font-size: 35px;
+      }
+    }
+    .b-exclusive {
+      h3 {
+        font-size: 23px;
+        margin-bottom: 25px;
+      }
+      ul {
+        li {
+          font-size: 16px;
+          margin-bottom: 25px;
+        }
+      }
+      h4 {
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+    }
+    .b-btn {
+      .button {
+        width: 100%;
+      }
+    }
+  }
+  .about-text {
+    padding-left: 0;
+    h2 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 16px;
+      b {
+        font-size: 18px;
+      }
+    }
+  }
+  .blockquote {
+    h2 {
+      font-size: 30px;
+    }
+    .b-texture {
+      width: calc(50% - 25px);
+      height: 50px;
+    }
+  }
+  .footer {
+    margin-top: 40px;
+  }
+  .preloader,
+  #video_header {
+    display: none !important;
+  }
+  *[data-js="while-video-play"] {
+    display: block;
+  }
+  .video {
+    padding: 150px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    video {
+      opacity: 0;
+    }
+  }
+  .popup {
+    max-height: unset;
+    height: auto;
+    &--content {
+      position: relative;
+      margin: 0 auto;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+      .text {
+        max-height: 300px;
+        overflow: auto;
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .header {
-        min-height: 850px;
-        &__courses-links {
-            display: block;
-            float: none;
-            text-align: center;
-        }
-        &__bg {
-            background-position: 70% 0;
-        }
-        .better-place {
-            font-size: 20px;
-        }
-        .main-nav-area {
-            height: 500px;
-        }
-        .big-link {
-            width: 140px;
-            height: 140px;
-            margin: 0;
-            span {
-                font-size: 20px;
-            }
-            font-size: 20px;
-            &:first-child {
-                margin-right: 40px;
-            }
-        }
-        .small-link {
-            width: 110px;
-            height: 110px;
-            margin-top: -17px;
-            clear: both;
-            span {
-                font-size: 14px;
-            }
-        }
+  .header {
+    min-height: 850px;
+    &__courses-links {
+      display: block;
+      float: none;
+      text-align: center;
     }
-    section {
-        padding: 50px 0;
+    &__bg {
+      background-position: 70% 0;
     }
-    .mentor {
-        p {
-            font-size: 16px;
-        }
+    .better-place {
+      font-size: 20px;
+    }
+    .main-nav-area {
+      height: 500px;
+    }
+    .big-link {
+      width: 140px;
+      height: 140px;
+      margin: 0;
+      span {
+        font-size: 20px;
+      }
+      font-size: 20px;
+      &:first-child {
+        margin-right: 40px;
+      }
+    }
+    .small-link {
+      width: 110px;
+      height: 110px;
+      margin-top: -17px;
+      clear: both;
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+  section {
+    padding: 50px 0;
+  }
+  .mentor {
+    p {
+      font-size: 16px;
+    }
+    img {
+      margin: 15px 0;
+    }
+    &__right-side {
+      p {
+        padding-right: 0;
+      }
+    }
+  }
+  .b-simple-text {
+    h5 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+  .slider {
+    .carousel__slide {
+      .photo-side {
         img {
-            margin: 15px 0;
+          width: 100%;
+          height: auto;
+          margin-bottom: 15px;
         }
-        &__right-side {
-            p {
-                padding-right: 0;
-            }
-        }
-    }
-    .b-simple-text {
-        h5 {
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-    }
-    .slider {
-        .carousel__slide {
-            .photo-side {
-                img {
-                    width: 100%;
-                    height: auto;
-                    margin-bottom: 15px;
-                }
-            }
-            .text-side {
-                h3 {
-                    font-size: 20px;
-                    margin-bottom: 15px;
-                }
-                p {
-                    font-size: 16px;
-                    padding-right: 0;
-                    & + .button {
-                        margin-top: 15px;
-                    }
-                }
-            }
-            .button {
-                padding: 7px 0;
-                font-size: 16px;
-            }
-        }
-    }
-    .photo-with-caption {
-        p {
-            margin-bottom: 15px;
-        }
-        img {
-            padding-right: 0;
-        }
-    }
-    .other-courses, .contact-us, .lectors {
+      }
+      .text-side {
         h3 {
-            font-size: 25px;
-            margin-bottom: 25px;
+          font-size: 20px;
+          margin-bottom: 15px;
         }
-        .course-teaser {
-            margin: 15px 0;
-            padding: 20px;
-            height: 210px;
-            h4 {
-                font-size: 18px;
-            }
-            &--btn-only {
-                padding: 0;
-            }
+        p {
+          font-size: 16px;
+          padding-right: 0;
+          & + .button {
+            margin-top: 15px;
+          }
         }
+      }
+      .button {
+        padding: 7px 0;
+        font-size: 16px;
+      }
     }
-    .b-lector {
-        img {
-            margin-bottom: 15px;
-        }
+  }
+  .photo-with-caption {
+    p {
+      margin-bottom: 15px;
     }
-    .footer {
-        margin-top: 40px;
+    img {
+      padding-right: 0;
     }
-    .video {
-        background-image: none !important;
+  }
+  .other-courses,
+  .contact-us,
+  .lectors {
+    h3 {
+      font-size: 25px;
+      margin-bottom: 25px;
     }
+    .course-teaser {
+      margin: 15px 0;
+      padding: 20px;
+      height: 210px;
+      h4 {
+        font-size: 18px;
+      }
+      &--btn-only {
+        padding: 0;
+      }
+    }
+  }
+  .b-lector {
+    img {
+      margin-bottom: 15px;
+    }
+  }
+  .footer {
+    margin-top: 40px;
+  }
+  .video {
+    background-image: none !important;
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .header {
-        .big-link {
-            width: 170px;
-            height: 170px;
-            &:first-child {
-                margin-right: 60px;
-            }
-        }
-        .small-link {
-            width: 140px;
-            height: 140px;
-        }
+  .header {
+    .big-link {
+      width: 170px;
+      height: 170px;
+      &:first-child {
+        margin-right: 60px;
+      }
     }
-    .mentor {
-        p {
-            font-size: 16px;
-        }
+    .small-link {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  .mentor {
+    p {
+      font-size: 16px;
+    }
+    img {
+      margin: 15px 0;
+    }
+    &__right-side {
+      p {
+        padding-right: 0;
+      }
+    }
+  }
+  .b-simple-text {
+    h5 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+  .slider {
+    .carousel__slide {
+      .photo-side {
         img {
-            margin: 15px 0;
+          width: 100%;
+          height: auto;
+          margin-bottom: 15px;
         }
-        &__right-side {
-            p {
-                padding-right: 0;
-            }
+      }
+      .text-side {
+        h3 {
+          font-size: 20px;
+          margin-bottom: 15px;
         }
-    }
-    .b-simple-text {
-        h5 {
-            font-size: 18px;
-            margin-bottom: 15px;
+        p {
+          font-size: 16px;
+          padding-right: 0;
+          & + .button {
+            margin-top: 15px;
+          }
         }
+      }
+      .button {
+        padding: 7px 0;
+        font-size: 16px;
+      }
     }
-    .slider {
-        .carousel__slide {
-            .photo-side {
-                img {
-                    width: 100%;
-                    height: auto;
-                    margin-bottom: 15px;
-                }
-            }
-            .text-side {
-                h3 {
-                    font-size: 20px;
-                    margin-bottom: 15px;
-                }
-                p {
-                    font-size: 16px;
-                    padding-right: 0;
-                    & + .button {
-                        margin-top: 15px;
-                    }
-                }
-            }
-            .button {
-                padding: 7px 0;
-                font-size: 16px;
-            }
-        }
+  }
+  .details {
+    .lectors {
+      .b-lector {
+        max-width: 290px;
+      }
     }
-    .details {
-        .lectors {
-            .b-lector {
-                max-width: 290px;
-            }
-        }
-    }
-    .video {
-        background-image: none !important;
-    }
+  }
+  .video {
+    background-image: none !important;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-    .header {
-        .big-link {
-            width: 210px;
-            height: 210px;
-        }
-        .small-link {
-            width: 160px;
-            height: 160px;
-        }
+  .header {
+    .big-link {
+      width: 210px;
+      height: 210px;
     }
-    .video {
-        background-image: none !important;
+    .small-link {
+      width: 160px;
+      height: 160px;
     }
+  }
+  .video {
+    background-image: none !important;
+  }
 }
 
 // Container
 @media (min-width: 1400px) {
-    .container {
-        max-width: 1530px;
-    }
-    .video {
-        background-image: none !important;
-    }
+  .container {
+    max-width: 1530px;
+  }
+  .video {
+    background-image: none !important;
+  }
 }

@@ -1,27 +1,30 @@
 // --------------------------------------------------
-// 
+//
 // Section title
-// 
+//
 // --------------------------------------------------
 .section-title {
-    margin-bottom: 42px;
-    h2 {
-        font-family: $raleway-bold;
-        font-size: 38px;
-        letter-spacing: 3px;
-    }
-    h4 {
-        font-family: $raleway-light;
-        font-size: 26px;
-        letter-spacing: 1.5px;
-        margin-top: 15px;
-    }
+  margin-bottom: 42px;
+  h2 {
+    font-family: $raleway-bold;
+    font-size: 38px;
+    letter-spacing: 3px;
+  }
+  h4 {
+    font-family: $raleway-light;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    margin-top: 15px;
+  }
 }
 
-.other-courses, .contact-us, .lectors {
-    h3 {
-        font-family: $raleway-bold;
-        font-size: 30px;
-        margin-bottom: 45px;
-    }
+.other-courses,
+.contact-us,
+.lectors,
+.reviews {
+  h3 {
+    font-family: $raleway-bold;
+    font-size: 30px;
+    margin-bottom: 45px;
+  }
 }

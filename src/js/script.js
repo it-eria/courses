@@ -173,6 +173,17 @@ $(function() {
     moveBackground();
   }
 
+  $('.review-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    dots: false,
+    prevArrow: '<a class="review-arr review-arr__prev"></a>',
+    nextArrow: '<a class="review-arr review-arr__next"></a>'
+  });
+
   $('.bottom-btn-area').on('mouseover', function() {
     $(this).addClass('mouseover');
   });
